@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action Page</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #073635;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Take Action Now</h1>
+        <p>Use the tool below to participate in the campaign.</p>
+        
+        <script language="javascript" src="https://www.congressweb.com/cweb/js/jquery.congressweb.iframe.js"></script>
+        <script language="javascript">
+            $cweb(function(){ 
+                $cweb('#congressweb-action-1').congressweb({
+                    url: '//www.congressweb.com/flocksafety/1',
+                    responsive: true,
+                    displayOptions: {
+                        show_site_menu: "false",
+                        show_action_titles: "true",
+                        show_action_descriptions: "true",
+                        page_background_color: "#FFFFFF",
+                        show_padding: "false",
+                        text_text_color: "#000000",
+                        text_font_family: "Arial, Helvetica, sans-serif",
+                        text_font_size: "14",
+                        links_text_color: "#073635",
+                        links_decoration: "none",
+                        links_hover_text_color: "#073635",
+                        links_hover_decoration: "none",
+                        buttons_custom_background_color: "#073635",
+                        buttons_custom_text_color: "#FFFFFF",
+                        section_title_background_color: "#073635",
+                        section_title_text_color: "#FFFFFF",
+                        section_title_weight: "normal",
+                    }
+                });
+            });
+        </script>
+        <div id="congressweb-action-1"></div>
+    </div>
+</body>
+</html>
